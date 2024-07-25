@@ -1,0 +1,14 @@
+[
+    {
+      text: 'Texto 1',
+      image: '/images/background-silver.png',
+    },
+    {
+      text: 'isso é um alumínio',
+      image: '/images/background-silver-alternative.png',
+    },
+    {
+      text: 'Texto 3',
+      image: '/images/cnc.png',
+    },
+  ];

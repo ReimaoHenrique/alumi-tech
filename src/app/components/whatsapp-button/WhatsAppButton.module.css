@@ -1,0 +1,27 @@
+/* WhatsAppButton.module.css */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-container {
+    margin-right: 8px; /* Ajuste o espaçamento conforme necessário */
+  }
+  
+  .button-text {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .bg-green-500 {
+    background-color: #34B7F1;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .text-black {
+    color: black;
+  }
+  
