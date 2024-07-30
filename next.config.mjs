@@ -18,8 +18,12 @@ const nextConfig = {
         destination: '/pages/contact',
       },
       {
-        source: '/projects',
-        destination: '/pages/projects',
+        source: '/services',
+        destination: '/pages/services',
+      },
+      {
+        source: '/services/blindex',
+        destination: '/pages/services/blindex',
       },
     ];
   },

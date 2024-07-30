@@ -1,0 +1,66 @@
+/* styles/ContactPage.module.css */
+.container {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100vw;       /* Largura total da tela */
+    height: 33vh;       /* Altura máxima da imagem como 1/3 da altura da tela */
+    overflow: hidden;   /* Garante que qualquer parte da imagem que ultrapasse o contêiner seja cortada */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ajusta a imagem para cobrir o contêiner */
+  }
+  
+  .textOverlay {
+    position: absolute;  /* Posiciona o texto sobre a imagem */
+    top: 50%;            /* Centraliza verticalmente */
+    left: 50%;           /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o alinhamento para o centro exato */
+    color: #fff;         /* Cor do texto */
+    font-size: 24px;     /* Tamanho da fonte */
+    font-weight: bold;   /* Peso da fonte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto para melhor visibilidade */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-size: 18px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha abaixo em telas menores */
+    margin-top: 20px; /* Espaçamento superior dos cards */
+  }
+  
+  .cardContainer > * {
+    flex: 1 1 300px; /* Flexibilidade para crescer e encolher com largura mínima de 300px */
+    max-width: 300px; /* Largura máxima dos cards */
+  }
+  
+  /* Adiciona uma classe específica para o h2 */
+  .subtitle {
+    font-size: 28px;  /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 30px; /* Margem superior para separar do <p> */
+    margin-bottom: 20px; /* Margem inferior para separar dos elementos seguintes */
+  }
+  
