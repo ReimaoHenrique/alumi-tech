@@ -1,0 +1,84 @@
+/* styles/Home.module.css */
+
+/* Estilo para o container principal da página */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; /* Adicione algum padding ao redor */
+  }
+  
+  /* Estilo para o carrossel */
+  .carouselContainer {
+
+    width: 100%;
+    /* Define a altura do carrossel, ajuste conforme necessário */
+    height: 400px; /* Exemplo de altura do carrossel */
+  }
+  
+  /* Estilo para a área de soluções */
+  .solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre os cartões */
+    margin-top: 2rem;
+  }
+  
+  /* Estilo para os títulos genéricos */
+  .title {
+    text-align: center;
+    margin: 2rem 0; /* Margem padrão para os títulos */
+  }
+  
+  /* Estilo específico para o título com margem personalizada */
+  .specialTitle {
+    text-align: center;
+    margin: 30% 0; /* Margem de 30% na parte superior e inferior */
+  }
+  
+  /* Estilo para os cartões de informação */
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff; /* Cor do texto dos cartões */
+    text-align: center;
+    width: 200px; /* Largura dos cartões */
+  }
+  
+  .cardInfo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cardInfo h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .cardInfo p {
+    margin-top: 0.5rem;
+  }
+  
+  .cardInfo a {
+    margin-top: 1rem;
+    color: #0070f3; /* Cor do link */
+    text-decoration: none;
+  }
+  
+  .cardInfo a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para o container de projetos */
+  .projectContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  

@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from '../contact/contact.module.css';
 import Image from 'next/image';
-import CardSimples from '@/app/components/Card-simples';
+import SimpleCard from '@/app/components/simple-card/SimpleCard';
 
 const ContactPage: React.FC = () => {
   return (
@@ -12,10 +12,10 @@ const ContactPage: React.FC = () => {
           <Image
             src="/images/contato-maquina.jpeg"
             alt="Contact Page Image"
-            layout="fill"       // Preenche o contêiner
-            objectFit="cover"   // Ajusta a imagem para cobrir o contêiner
-            className={styles.image} // Aplica a classe de estilos para a imagem
-            priority={true}     // Carrega a imagem de forma prioritária (opcional)
+            layout="fill"
+            objectFit="cover"
+            className={styles.image}
+            priority={true}
           />
           <div className={styles.textOverlay}>
             Como você prefere falar com a gente?
@@ -28,13 +28,13 @@ const ContactPage: React.FC = () => {
           </p>
           <h2 className={styles.subtitle}>Suporte Online</h2>
           <div className={styles.cardContainer}>
-            <CardSimples
+            <SimpleCard
               title="Marcar orçamento"
               description="Uma descrição breve"
               buttonText="Marcar"
               buttonLink="https://www.google.com"
             />
-            <CardSimples
+            <SimpleCard
               title="Tirar Duvidas"
               description="Uma descrição breve"
               buttonText="Chamar"
@@ -43,13 +43,13 @@ const ContactPage: React.FC = () => {
           </div>
           <h2 className={styles.subtitle}>Feedback e Avaliações</h2>
           <div className={styles.cardContainer}>
-            <CardSimples
+            <SimpleCard
               title="Feedback"
               description="Uma descrição breve"
-              buttonText="Avalie "
+              buttonText="Avalie"
               buttonLink="https://www.google.com"
             />
-            <CardSimples
+            <SimpleCard
               title="Avaliações"
               description="Uma descrição breve"
               buttonText="Avalie"

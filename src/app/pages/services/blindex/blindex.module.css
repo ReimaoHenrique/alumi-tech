@@ -1,0 +1,102 @@
+/* styles/services.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .description {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: #666;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .evaluations {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  
+  .evaluationCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .evaluationCard img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+  
+  .evaluationContent {
+    padding-left: 100px; /* Espaço para a foto do cliente */
+  }
+  
+  .evaluationTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .evaluationText {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .rating {
+    font-size: 1.125rem;
+    color: #f5a623; /* Cor para estrelas de avaliação */
+    margin-bottom: 0.5rem;
+  }
+  
+  .ctaButton {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .ctaButton:hover {
+    background-color: #005bb5;
+  }
+  

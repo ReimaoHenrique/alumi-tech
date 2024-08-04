@@ -1,0 +1,108 @@
+/* ClientCard.module.css */
+.card {
+  width: 200px;
+  height: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardExpanded {
+  width: 80vw; /* 80% da largura da tela */
+  height: 80vh; /* 80% da altura da tela */
+  position: fixed; /* Manter a posição fixa para a sobreposição */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centralizar o cartão */
+  z-index: 10;
+}
+
+.cardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.cardContent {
+  padding: 16px;
+  text-align: center;
+  flex: 1;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cardProfileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cardReview {
+  font-size: 14px;
+  color: #555;
+}
+
+.cardStars {
+  margin: 8px 0;
+}
+
+.cardStars span {
+  color: gold;
+}
+
+.cardAdditionalPhotos {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.cardAdditionalPhotos img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fullscreenPhoto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.fullscreenPhoto img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}

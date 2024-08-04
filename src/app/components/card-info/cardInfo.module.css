@@ -1,0 +1,53 @@
+/* CardAbout.module.css */
+
+.card {
+  position: relative;
+  width: 300px; /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário */
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7); /* Filtro branco com 70% de opacidade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+.content {
+  max-width: 80%;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Estilo opcional para o componente Link */
+.link {
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: inline-block; /* Garante que o Link não afete o layout */
+}
